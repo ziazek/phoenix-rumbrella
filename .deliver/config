@@ -6,8 +6,9 @@ BUILD_USER="deploy"
 BUILD_AT="/tmp/edeliver/rumbrella/builds"
 
 STAGING_HOSTS="139.59.99.144"
-STAGING_USER="web"
+STAGING_USER="deploy"
 DELIVER_TO="/home/deploy/rumbrella"
+RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
 
 # For *Phoenix* projects, symlink prod.secret.exs to our tmp source
 pre_erlang_get_and_update_deps() {
