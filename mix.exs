@@ -3,9 +3,20 @@ defmodule Rumbrella.Mixfile do
 
   def project do
     [apps_path: "apps",
+     version: append_revision("0.0.1"),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
+  end
+
+  def append_revision(version) do
+    "#{version}+#{revision}"
+  end
+
+  defp revision() do
+    System.cmd("git", ["rev-parse", "--short", "HEAD"])
+    |> elem(0)
+    |> String.rstrip
   end
 
   # Dependencies can be Hex packages:
