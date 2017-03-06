@@ -1,0 +1,8 @@
+<h1>Showing User</h1>
+
+<p><%= render "user.html", user: @user %></p>
+
+<p>ID: <%= @user.id %></p>
+<p>Name: <%= @user.name %></p>
+<p>PW Hash: <%= @user.password_hash %></p>
+<p>Created at: <%= @user.inserted_at %></p>

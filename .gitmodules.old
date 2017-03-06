@@ -1,3 +1,0 @@
-[submodule "apps/rumbl"]
-	path = apps/rumbl
-	url = git@github.com:ziazek/phoenix-rumbl.git
