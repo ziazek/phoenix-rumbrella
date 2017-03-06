@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :rumbl, Rumbl.Endpoint,
   # http: [port: {:system, "PORT"}],
-  http: [port: 80],
+  http: [port: 8080],
   url: [host: "rumbrella.themestage.com", port: 80],
   cache_static_manifest: "priv/static/manifest.json"
 
