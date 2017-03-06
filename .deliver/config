@@ -1,5 +1,6 @@
 APP="rumbrella"
 
+USING_DISTILLERY=true
 BUILD_HOST="139.59.99.144"
 BUILD_USER="deploy"
 BUILD_AT="/tmp/edeliver/rumbrella/builds"
