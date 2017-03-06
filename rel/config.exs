@@ -39,7 +39,7 @@ end
 # will be used by default
 
 release :rumbrella do
-  set version: "0.1.0"
+  set version: "0.1.1"
   set applications: [
     info_sys: :permanent,
     rumbl: :permanent
