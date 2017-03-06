@@ -6,7 +6,7 @@ BUILD_USER="deploy"
 BUILD_AT="/home/$BUILD_USER/edeliver/$APP/builds"
 
 # Used by umbrella projects only
-RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
+RELEASE_DIR="$BUILD_AT/rel/$APP"
 
 STAGING_HOSTS="139.59.99.144"
 STAGING_USER="deploy"
