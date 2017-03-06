@@ -3,17 +3,18 @@ APP="rumbrella"
 USING_DISTILLERY=true
 BUILD_HOST="139.59.99.144"
 BUILD_USER="deploy"
-BUILD_AT="/tmp/edeliver/rumbrella/builds"
+BUILD_AT="/home/$BUILD_USER/edeliver/$APP/builds"
+
+# Used by umbrella projects only
+RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
 
 STAGING_HOSTS="139.59.99.144"
 STAGING_USER="deploy"
 TEST_AT="/home/deploy/staging"
-# RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
 
 PRODUCTION_HOSTS="139.59.99.144"
 PRODUCTION_USER="deploy"
 DELIVER_TO="/home/deploy/prod"
-# RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
 
 # For *Phoenix* projects, symlink prod.secret.exs to our tmp source
 pre_erlang_get_and_update_deps() {
