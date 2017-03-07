@@ -15,7 +15,7 @@ config :rumbl, Rumbl.Endpoint,
   # http: [port: {:system, "PORT"}],
   http: [port: 8080],
   server: true,
-  url: [host: "localhost"],
+  url: [host: "rumbrella.themestage.com"],
   # url: [host: "rumbrella.themestage.com", port: 80],
   cache_static_manifest: "priv/static/manifest.json"
 
