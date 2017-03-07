@@ -3,7 +3,7 @@ defmodule Rumbl.Mixfile do
 
   def project do
     [app: :rumbl,
-     version: append_revision("0.0.9"),
+     version: append_revision("0.0.10"),
      build_path: "../../_build",
      config_path: "../../config/config.exs",
      deps_path: "../../deps",
