@@ -32,7 +32,7 @@ environment :prod do
   set include_src: false
   set cookie: :"Nl(Aga|_c;)q>eFP)7g0av_Q$U$ty=^Wf!iFgEANp?ek*HFN7T)onAXdC8hch6s:"
   # Other settings: https://goo.gl/VgNk0l
-  set output_dir: "rel/rumbrella"
+  set output_dir: "rel/rumbl"
 end
 
 # You may define one or more releases in this file.
