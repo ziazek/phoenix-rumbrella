@@ -33,6 +33,8 @@ pre_erlang_clean_compile() {
     [ -f ~/.profile ] && source ~/.profile # load profile (optional)
     set -e # fail if any command fails (recommended)
     cd '$BUILD_AT' # enter the build directory on the build host (required)
+    mkdir -p priv/static
+    cd $BUILD_AT/apps/$APP
     npm install
     ./node_modules/brunch/bin/brunch b -p
     mkdir -p priv/static # required by the phoenix.digest task
