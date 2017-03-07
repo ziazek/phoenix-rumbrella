@@ -40,7 +40,7 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :rumbrella do
+release :rumbl do
   set version: current_version(:rumbl)
   set applications: [
     info_sys: :permanent,
