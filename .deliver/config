@@ -1,4 +1,4 @@
-APP="rumbl"
+APP="rumbrella"
 
 USING_DISTILLERY=true
 BUILD_HOST="139.59.99.144"
@@ -7,6 +7,7 @@ BUILD_AT="/home/$BUILD_USER/edeliver/$APP/builds"
 
 # Used by umbrella projects only
 RELEASE_DIR="$BUILD_AT/rel/$APP"
+# RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
 
 STAGING_HOSTS="139.59.99.144"
 STAGING_USER="deploy"
