@@ -38,7 +38,7 @@ pre_erlang_clean_compile() {
     cd '$BUILD_AT/apps/rumbl'
     npm install 
 
-    brunch build --production 
+    ./node_modules/brunch/bin/brunch build --production 
 
     # run your custom task
     APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phoenix.digest $SILENCE
